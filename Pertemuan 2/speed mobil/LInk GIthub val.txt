@@ -1,0 +1,60 @@
+Nama : steven valiant vianto
+Npm 2331068 
+Kelas 5PSIA 
+
+Deskripsi :
+
+Proyek ini menggunakan pendekatan Fuzzy Logic untuk menentukan kecepatan mobil berdasarkan dua variabel utama:
+
+Jarak terhadap kendaraan depan (Distance)
+
+Tekanan pedal gas (Throttle)
+
+Tujuan sistem adalah menjaga keseimbangan antara keamanan (safe distance) dan kenyamanan (responsive acceleration).
+
+| Tahap | Deskripsi                                                                                                                   |
+| :---: | --------------------------------------------------------------------------------------------------------------------------- |
+|   1   | Dataset awal dihasilkan secara acak dengan 3 kolom utama: **Distance**, **Throttle**, dan **Speed (hasil fuzzy)**.          |
+|   2   | Membership function didefinisikan untuk setiap variabel dengan kategori **Low**, **Medium**, dan **High**.                  |
+|   3   | Dibuat **aturan fuzzy (fuzzy rules)** berbentuk IF–THEN untuk menentukan hubungan antara jarak, tekanan gas, dan kecepatan. |
+|   4   | Sistem fuzzy diproses menggunakan **metode Mamdani**, dan hasil defuzzifikasi menghasilkan nilai kecepatan nyata.           |
+|   5   | Ditambahkan dua kolom tambahan sebagai insight:                                                                             |
+|       | - **GapRatio:** rasio antara Throttle dan Distance.                                                                         |
+|       | - **Efficiency:** rasio antara Speed dan Throttle.                                                                          |
+|   6   | Dataset hasil akhir memiliki **5 kolom** dan disimpan dalam file CSV.                                                       |
+|   7   | Dibuat **visualisasi data** berupa histogram, scatter plot, dan boxplot untuk menganalisis hubungan antarvariabel.          |
+
+
+Tools & Library:
+
+Python 3
+
+numpy, pandas
+
+scikit-fuzzy
+
+matplotlib, seaborn
+
+
+Visualisasi:
+
+Histogram untuk distribusi Distance, Throttle, dan Speed
+
+Scatter Plot antara Distance dan Speed
+
+Boxplot untuk melihat variasi dan outlier
+
+Output File:
+
+speed_fuzzy_raw.csv → dataset awal (3 kolom)
+
+speed_fuzzy_final.csv → dataset akhir (5 kolom)
+
+speed_fuzzy_visuals.png → hasil visualisasi data
+
+
+
+
+LiNK GITHUB
+
+https://github.com/StevenVianto/LAB-AI-5PSIA-2331068
